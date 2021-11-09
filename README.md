@@ -28,17 +28,19 @@ __<a
 
 ## Commands
 
-| Command   | Description                                                                           |
-| --------- | ------------------------------------------------------------------------------------- |
-| `/search` | Search the bot's files for the desired book                                           |
-| `/get`    | Ask the bot to return the desired book by sending an attachment or a link to the file |
-| `/add`    | Add a new book to the bot's files                                                     |
-| `/help`   | Display a help message                                                                |
+| Command    | Description                                                                           |
+| ---------- | ------------------------------------------------------------------------------------- |
+| `/search`  | Search the bot's files for the desired book                                           |
+| `/get`     | Ask the bot to return the desired book by sending an attachment or a link to the file |
+| `/add`     | Add a new book to the bot's files                                                     |
+| `/request` | Request a book to be added to the bot                                                 |
+| `/help`    | Display a help message                                                                |
 
 ## Features
 
 - [ ] Search for books by title, author, or ISBN
 - [ ] Add books to the bot's files
+- [ ] Request a book to be added to the bot's files
 
 ## How To Get A Book
 
