@@ -1,18 +1,18 @@
-const { Discord, Intents } = require("discord.js");
-const myIntents = new Intents();
-//myIntents.add(Intents.FLAGS.USE_SLASH_COMMANDS, Intents.FLAGS.ATTACH_FILES, Intents.FLAGS.EMBED_LINKS, Intents.FLAGS.SEND_MESSAGES);
-const client = new Discord.Client({ intents: 2147534848 });
+require('dotenv').config();
+const { Client, Intents } = require('discord.js');
+const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
-client
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
 
-client.on("ready", () => {
-  console.log(`Logged in as ${client.user.tag}!`)
-})
+client.on('interactionCreate', async interaction => {
+  if (!interaction.isCommand()) return;
 
-client.on("message", msg => {
-  if (msg.content === "ping") {
-    msg.reply("pong");
+  if (interaction.commandName === 'ping') {
+    await interaction.reply('Pong!');
   }
-})
+});
 
-client.login(process.env.TOKEN)
+console.log(`Token: ${process.env.TOKEN}`);
+client.login(process.env.TOKEN);

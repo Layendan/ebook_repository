@@ -18,7 +18,13 @@ This discord bot serves as a repository for all the books that are currently bei
 
 Follow this link to invite the bot to your server:
 
- __[Invite Link](https://discord.com/api/oauth2/authorize?client_id=907429810412867584&permissions=2147797056&scope=bot%20applications.commands)__
+__<a
+    href="https://discord.com/api/oauth2/authorize?client_id=907429810412867584&permissions=2147797056&scope=bot%20applications.commands"
+    target="_blank"
+    rel="noopener noreferrer">
+    <!-- _blank for new tab and no referrer for security reasons -->
+        Invite Link
+</a>__
 
 ## Commands
 
@@ -31,7 +37,8 @@ Follow this link to invite the bot to your server:
 
 ## Features
 
-This bot is currently in development.
+- [ ] Search for books by title, author, or ISBN
+- [ ] Add books to the bot's files
 
 ## How To Get A Book
 
