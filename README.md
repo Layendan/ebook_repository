@@ -13,6 +13,7 @@ This discord bot serves as a repository for all the books that are currently bei
   - [How To Add A Book](#how-to-add-a-book)
   - [File Formats](#file-formats)
   - [License](#license)
+  - [Dependencies](#dependencies)
 
 ## Invite The Bot
 
@@ -73,3 +74,17 @@ Planned formats include: `.mobi`, `.awz3`, `.rtf`, `.txt`, `.doc`, and more...
 This project uses the [Mozilla Public License 2.0](/LICENSE).
 
 For more information on what this license means, see [this page](https://www.mozilla.org/en-US/MPL/2.0/).
+
+## Dependencies
+
+These should be run in your terminal if you plan on building this app.
+
+Although some of these are shown multiple times, you only need to run them once.
+
+- [index.js](index.js)
+  - `npm install discord.js`
+  - `npm install dotenv`
+- [slashcommandcreator.js](slashcommandcreator.js)
+  - `npm install @discordjs/rest`
+  - `npm install discord-api-types/v9`
+  - `npm install dotenv`
